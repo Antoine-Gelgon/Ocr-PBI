@@ -1,0 +1,7 @@
+x:=1.1;
+y:=1;
+strokeX:=70;
+strokeY:=50;
+strokeRotate:=0;
+penStyle:=1;
+Version:=1;

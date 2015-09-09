@@ -1,0 +1,81 @@
+
+font_identifier:="OCR-PBI";
+font_size 15pt#;
+designsize:=10;
+chasse:=40;
+
+
+%%%%%%%%%%%%%%%% Paramètres %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sharpedges  := 0;          %  0 -> rounded edges   |  1 -> sharp edges
+globalslant := 0;          %  slant factor (typical zero or 0.2)
+lightfactor := 0;          %  (typical 0.6 for outlined characters)
+negativ     := 0;          %  0 -> normal          |  1 -> white characters
+                           %                               on dark background
+extraline   := 0;          %  0 -> normal
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+input variable;
+
+input ocr-pbi-canonique-set
+
+input ocr-pbi-canonique-def
+
+input letters/cap/A
+input letters/cap/B
+input letters/cap/C
+input letters/cap/D
+input letters/cap/E
+input letters/cap/F
+input letters/cap/G
+input letters/cap/H
+input letters/cap/I
+input letters/cap/J
+input letters/cap/K
+input letters/cap/L
+input letters/cap/M
+input letters/cap/N
+input letters/cap/O
+input letters/cap/P
+input letters/cap/Q
+input letters/cap/R
+input letters/cap/S
+input letters/cap/T
+input letters/cap/U
+input letters/cap/V
+input letters/cap/W
+input letters/cap/X
+input letters/cap/Y
+input letters/cap/Z
+
+input letters/bdc/a
+input letters/bdc/b
+input letters/bdc/c
+input letters/bdc/d
+input letters/bdc/e
+input letters/bdc/f
+input letters/bdc/g
+input letters/bdc/h
+input letters/bdc/i
+input letters/bdc/j
+input letters/bdc/k
+input letters/bdc/l
+input letters/bdc/m
+input letters/bdc/n
+input letters/bdc/o
+input letters/bdc/p
+input letters/bdc/q
+input letters/bdc/r
+input letters/bdc/s
+input letters/bdc/t
+input letters/bdc/u
+input letters/bdc/v
+input letters/bdc/w
+input letters/bdc/x
+input letters/bdc/y
+input letters/bdc/y
+input letters/bdc/z
+
+for kkk:=0 step 1 until 144 : makechar kkk; endfor
+
+end.
