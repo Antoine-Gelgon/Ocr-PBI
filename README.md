@@ -7,6 +7,17 @@ Ce caractère est pensé pour un projet particulier, le site de la **Petite Bibl
 
 Le code source des fichiers metafont (.mf) est sous la license libre GNU/GPL.
 Les fichiers fontes type : TrueType (.ttf), OpenType(.otf) .. sont sous la license [Syl Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+
+### Les programmes prérequis
+
+Il exécuter la font il vous faut plusieurs programmes.
+
+* **Texlive** -> [documentation](https://github.com/EtienneOz/MetaBlum)
+
+* [**Fontforge**](http://fontforge.github.io/en-US/).
+
+* [**Mftrace**](http://lilypond.org/mftrace/)
+
 ###Description des fichiers
 
 Pour pouvoir exécuter cette fonte il faut la totalité des fichiers .mf de ce dossier à la même racine.
@@ -27,6 +38,7 @@ Pour pouvoir exécuter cette fonte il faut la totalité des fichiers .mf de ce d
 
 **speci.html** // permet de visualiser l'ensemble des lettres directement après l'exécution.
 
-###Exécuter la fonte.
+###Exécuter la fonte
+
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
