@@ -8,7 +8,7 @@ Ce caractère est pensé pour un projet particulier, le site de la **Petite Bibl
 Le code source des fichiers metafont (.mf) est sous la license libre GNU/GPL.
 Les fichiers fontes type : TrueType (.ttf), OpenType(.otf) .. sont sous la license [Syl Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
-### Les programmes prérequis
+###Les programmes prérequis
 
 Il exécuter la font il vous faut plusieurs programmes.
 
@@ -38,7 +38,12 @@ Pour pouvoir exécuter cette fonte il faut la totalité des fichiers .mf de ce d
 
 - **speci.html** // permet de visualiser l'ensemble des lettres directement après l'exécution.
 
-###Exécuter la fonte
+###Générer la fonte
 
+Si tout les programmes prérequis sont correctement installés, exécution de la fonte se fait simplement dans le terminal. Il faut aller au dossier source avec la commande `cd`. Puis entrer cette ligne : `bash exe.sh ocr-pbi-canonique a`
+
+###Création d'un nouveau glyph
+
+Pour créer un nouveau glyph 
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
