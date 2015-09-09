@@ -5,7 +5,7 @@ Ocr-PBI est une fonte libre dévellopée par **Lise Brosseau** et **Antoine Gelg
 
 Ce caractère est pensé pour un projet en particulier, le site de la **Petite Bibliothèque Infernale** de l'[Agence du Doute](http://agencedudoute.org/). Cependant nous encourrageons la réapropriation de son code et de ses formes, par d'autres pour d'autres contextes. **Fork this.**
 
-![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/re.png?raw=true)
+![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/all.png)
 
 Le code source des fichiers metafont (.mf) est sous la license libre **GNU/GPL**.
 Les fichiers fontes type : TrueType (.ttf), OpenType(.otf) .. sont sous la license [**Syl Open Font License**](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
@@ -48,6 +48,9 @@ Si tout les programmes prérequis sont correctement installés, exécution de la
 
 Pour créer un nouveau glyph il faut faire de préférence un fichier séparé, enregistré dans le dossier `letters/`.
 Exemple pour la lettre bas de casse `a`  il faut créer un fichier `a.mf` dans `letters/bdc/`.
+
+![lettre a](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/a.png?raw=true)
+
 Puis dans ce fichier décrire la lettre de cette manière.
 ```
 %--- a --- 
@@ -59,8 +62,6 @@ o.s[97][2]:= (0,8.65){left}..(-2,8.05)..(-3,6.9)..(-3.5,4.6){down}..
              (1,0.73)..(2,1.2)..(3,2.35)..(3.5,4.6){up}..(3,6.9)..(2,8.05)..cycle;
 o.i[97]:=2 ; 
 ```
-[lettre a]()
-
 Un tracé est déclaré par `o.s[code HTML du caractère][numéro du tracé]:=`. Ici le code HTML du caractère `a` est `&#97` mais nous ne marquons que le nombre de ce code donc `97`.
 
 La dernière ligne `o.i[code HTML du caractère]:= nombre de tracés total` ici il y a 2 tracés.
@@ -97,14 +98,14 @@ Grâce aux variables `strokeX` et `strokeY` on change la largeur, avec `strokeRo
 
 La variable `penStyle` définit le style de forme du trait. La valeur `0` corespond à un trait de forme carré(pensquare), la valeur `1` à celui de forme circulaire(pencircle).
 
-![Specimen](square)
+![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/circle-square/square.png?raw=true)
 ```
 strokeX:=70;
 strokeY:=50;
 strokeRotate:=45;
 penStyle:=0;
 ```
-![Specimen](circle)
+![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/circle-square/circle.png?raw=true)
 ```
 strokeX:=70;
 strokeY:=50;
