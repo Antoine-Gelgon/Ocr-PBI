@@ -51,7 +51,6 @@ Exemple pour la lettre bas de casse `a`  il faut créer un fichier `a.mf` dans `
 
 ![lettre a](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/a.png?raw=true)
 
-Puis dans ce fichier décrire la lettre de cette manière.
 ```
 %--- a --- 
 
