@@ -24,21 +24,21 @@ Il exécuter la font il vous faut plusieurs programmes.
 
 Pour pouvoir exécuter cette fonte il faut la totalité des fichiers .mf de ce dossier à la même racine.
 
-- **ocr-pbi-canonique.mf** // est le fichier réunissant l'entirèeté des fichiers sources. C'est le fichier à exécuter, pour générer la fonte. Il permet également de changer des paramètres globales de la fonte. (exemple mettre les glyphs sous fond noir)
+- `ocr-pbi-canonique.mf` // est le fichier réunissant l'entirèeté des fichiers sources. C'est le fichier à exécuter, pour générer la fonte. Il permet également de changer des paramètres globales de la fonte. (exemple mettre les glyphs sous fond noir)
 
-- **ocr-pbi-canonique-set.mf** // l'ensemble des fonctions ce trouve dans ce fichiers.
+- `ocr-pbi-canonique-set.mf` // l'ensemble des fonctions ce trouve dans ce fichiers.
 
-- **variable.mf** // sont les variables simple à modifier. Par exemple changer le type et la taille du trait, la largeur de la chasse et la hauteur des lettres.
+- `variable.mf` // sont les variables simple à modifier. Par exemple changer le type et la taille du trait, la largeur de la chasse et la hauteur des lettres.
 
-- **Letters** // dans ce dossier on trouve les fichiers séparés des glyphs.
+- `letters/` // dans ce dossier on trouve les fichiers séparés des glyphs.
 
-- **ocr-pbi-canonique-def.mf** // un fichier avec le reste des glyphs.
+- `ocr-pbi-canonique-def.mf` // un fichier avec le reste des glyphs.
 
-- **exe.sh** // le script d'exécution.
+- `exe.sh` // le script d'exécution.
 
-- **print.py** // petit script en python pour changer le fichier le .pfa en .ttf.
+- `print.py` // petit script en python pour changer le fichier le .pfa en .ttf.
 
-- **speci.html** // permet de visualiser l'ensemble des lettres directement après l'exécution.
+- `speci.html` // permet de visualiser l'ensemble des lettres directement après l'exécution.
 
 ###Générer la fonte
 
@@ -46,23 +46,46 @@ Si tout les programmes prérequis sont correctement installés, exécution de la
 
 ###Création d'un nouveau glyph
 
-Pour créer un nouveau glyph il faut faire de préférence un fichier séparé, enregistré dans le dossier `letters`.
+Pour créer un nouveau glyph il faut faire de préférence un fichier séparé, enregistré dans le dossier `letters/`.
 Exemple pour la lettre bas de casse `a`  il faut créer un fichier `a.mf` dans `letters/bdc/`.
 Puis dans ce fichier décrire la lettre de cette manière.
 ```
 %--- a --- 
+
+o.s[97][1]:= (3.5,8.5)--(3.5,0.65);
+
+o.s[97][2]:= (0,8.65){left}..(-2,8.05)..(-3,6.9)..(-3.5,4.6){down}..
+             (-3,2.35)..(-2,1.2)..(-1,0.73)..(0,0.6){right}..
+             (1,0.73)..(2,1.2)..(3,2.35)..(3.5,4.6){up}..(3,6.9)..(2,8.05)..cycle;
+o.i[97]:=2 ; 
+```
+[lettre a]()
+
+Chaque tracé est déclaré par `o.s[code HTML du caractère][numéro du tracé]:=`. Ici  le code HTML du caractère `a` est `&#97` mais nous ne marquons que le nombre de ce code donc `97`.
+
+La dernière ligne `o.i[code HTML du caractère]:= nombre de tracés total` ici il y a 2 tracés.
+Les points d'encrages du tracé sont écrits `(x,y)`. Pour faire une courbe entre deux points on utilise `..` et `--` pour tracer une droite.
+
+Le tracé peut-être orienté grâce à `{up}`, `{down}`, `{right}`, `{left}` ou bien par `{(x,y)}`.
+
+###Injecter les variable x et y
+
+Pour permettre à la fonte de pouvoir changer de chasse ou de hauteur on peut injecter les variables `x` et `y` dans les glyphs.
+
+![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
+
+Pour ça il suffit d'écrire `*x` et `*y` dans les coordonnées des points. La description du `a` deviendra donc:
+```
+%--- a ---
 
 o.s[97][1]:= (3.5*x,8.5*y)--(3.5*x,0.65*y);
 
 o.s[97][2]:= (0*x,8.65*y){left}..(-2*x,8.05*y)..(-3*x,6.9*y)..(-3.5*x,4.6*y){down}..
              (-3*x,2.35*y)..(-2*x,1.2*y)..(-1*x,0.73*y)..(0*x,0.6*y){right}..
              (1*x,0.73*y)..(2*x,1.2*y)..(3*x,2.35*y)..(3.5*x,4.6*y){up}..(3*x,6.9*y)..(2*x,8.05*y)..cycle;
-o.i[97]:=2  ;
+             
+o.i[97]:=2  ;   o.m[97]  := 0.65;
 ```
-[lettre a]()
-
-
-
 
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
