@@ -88,7 +88,7 @@ o.s[97][2]:= (0*x,8.65*y){left}..(-2*x,8.05*y)..(-3*x,6.9*y)..(-3.5*x,4.6*y){dow
              
 o.i[97]:=2  ;   o.m[97]  := 0.65;
 ```
-La valeur de ces variables peuvent être changé dans le fichier `variable.mf`.
+La valeur de ces variables peut être changé dans le fichier `variable.mf`.
 
 ###Varier le type et la taille du tracé
 
