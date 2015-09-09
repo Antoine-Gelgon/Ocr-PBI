@@ -5,6 +5,8 @@ Ocr-PBI est une fonte libre dévellopée par **Lise Brosseau** et **Antoine Gelg
 
 Ce caractère est pensé pour un projet particulier, le site de la **Petite Bibliothèque Infernale** de l'[Agence du Doute](http://agencedudoute.org/). Cependant nous encourrageons la réapropriation de son code et de ses formes, par d'autres pour d'autres contextes que celui d'orrigine. Fork this.
 
+![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/re.png?raw=true)
+
 Le code source des fichiers metafont (.mf) est sous la license libre GNU/GPL.
 Les fichiers fontes type : TrueType (.ttf), OpenType(.otf) .. sont sous la license [Syl Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
@@ -44,6 +46,23 @@ Si tout les programmes prérequis sont correctement installés, exécution de la
 
 ###Création d'un nouveau glyph
 
-Pour créer un nouveau glyph 
+Pour créer un nouveau glyph il faut faire de préférence un fichier séparé, enregistré dans le dossier `letters`.
+Exemple pour la lettre bas de casse `a`  il faut créer un fichier `a.mf` dans `letters/bdc/`.
+Puis dans ce fichier décrire la lettre de cette manière.
+```
+%--- a --- 
+
+o.s[97][1]:= (3.5*x,8.5*y)--(3.5*x,0.65*y);
+
+o.s[97][2]:= (0*x,8.65*y){left}..(-2*x,8.05*y)..(-3*x,6.9*y)..(-3.5*x,4.6*y){down}..
+             (-3*x,2.35*y)..(-2*x,1.2*y)..(-1*x,0.73*y)..(0*x,0.6*y){right}..
+             (1*x,0.73*y)..(2*x,1.2*y)..(3*x,2.35*y)..(3.5*x,4.6*y){up}..(3*x,6.9*y)..(2*x,8.05*y)..cycle;
+o.i[97]:=2  ;
+```
+[lettre a]()
+
+
+
+
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
