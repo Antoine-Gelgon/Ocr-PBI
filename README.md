@@ -61,20 +61,21 @@ o.i[97]:=2 ;
 ```
 [lettre a]()
 
-Chaque tracé est déclaré par `o.s[code HTML du caractère][numéro du tracé]:=`. Ici  le code HTML du caractère `a` est `&#97` mais nous ne marquons que le nombre de ce code donc `97`.
+Un tracé est déclaré par `o.s[code HTML du caractère][numéro du tracé]:=`. Ici le code HTML du caractère `a` est `&#97` mais nous ne marquons que le nombre de ce code donc `97`.
 
 La dernière ligne `o.i[code HTML du caractère]:= nombre de tracés total` ici il y a 2 tracés.
 Les points d'encrages du tracé sont écrits `(x,y)`. Pour faire une courbe entre deux points on utilise `..` et `--` pour tracer une droite.
 
 Le tracé peut-être orienté grâce à `{up}`, `{down}`, `{right}`, `{left}` ou bien par `{(x,y)}`.
 
-###Injecter les variable x et y
+###Injecter les variables x et y
 
 Pour permettre à la fonte de pouvoir changer de chasse ou de hauteur on peut injecter les variables `x` et `y` dans les glyphs.
 
-![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
+![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/recadre/anime-ocr-pbi.gif)
 
-Pour ça il suffit d'écrire `*x` et `*y` dans les coordonnées des points. La description du `a` deviendra donc:
+
+Pour ça il suffit d'écrire `*x` et `*y` dans les coordonnées des points(le `*` est le signe multiplié). La description du `a` deviendra donc:
 ```
 %--- a ---
 
@@ -86,6 +87,7 @@ o.s[97][2]:= (0*x,8.65*y){left}..(-2*x,8.05*y)..(-3*x,6.9*y)..(-3.5*x,4.6*y){dow
              
 o.i[97]:=2  ;   o.m[97]  := 0.65;
 ```
+La valeur de ces variables peuvent être changé dans le fichier `variable.mf`.
 
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
