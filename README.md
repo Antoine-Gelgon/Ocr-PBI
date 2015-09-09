@@ -1,18 +1,18 @@
 # Ocr-PBI
-Ocr-PBI est une fonte libre dévellopée par **Lise Brosseau** et **Antoine Gelgon**. Cette monospace est réalisé grâce au langage de programmation **Metafont**. Ce projet est un fork du projet de l'[**Ocr-B metafont**](https://www.ctan.org/tex-archive/fonts/ocr-b) fait dans les débuts 90 par **Norbert Schwarz**.
+Ocr-PBI est une fonte libre dévellopée par **Lise Brosseau** et **Antoine Gelgon**. Cette monospace est réalisée grâce au langage de programmation **Metafont**. Ce projet est un fork du projet de l'[**Ocr-B metafont**](https://www.ctan.org/tex-archive/fonts/ocr-b) fait dans les débuts 90 par **Norbert Schwarz**.
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/re.png?raw=true)
 
-Ce caractère est pensé pour un projet particulier, le site de la **Petite Bibliothèque Infernale** de l'[Agence du Doute](http://agencedudoute.org/). Cependant nous encourrageons la réapropriation de son code et de ses formes, par d'autres pour d'autres contextes que celui d'orrigine. Fork this.
+Ce caractère est pensé pour un projet en particulier, le site de la **Petite Bibliothèque Infernale** de l'[Agence du Doute](http://agencedudoute.org/). Cependant nous encourrageons la réapropriation de son code et de ses formes, par d'autres pour d'autres contextes. **Fork this.**
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/re.png?raw=true)
 
-Le code source des fichiers metafont (.mf) est sous la license libre GNU/GPL.
-Les fichiers fontes type : TrueType (.ttf), OpenType(.otf) .. sont sous la license [Syl Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+Le code source des fichiers metafont (.mf) est sous la license libre **GNU/GPL**.
+Les fichiers fontes type : TrueType (.ttf), OpenType(.otf) .. sont sous la license [**Syl Open Font License**](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
 ###Les programmes prérequis
 
-Il exécuter la font il vous faut plusieurs programmes.
+Pour exécuter la fonte il vous faut plusieurs programmes.
 
 * **Texlive** -> [documentation](https://github.com/EtienneOz/MetaBlum)
 
@@ -89,5 +89,12 @@ o.i[97]:=2  ;   o.m[97]  := 0.65;
 ```
 La valeur de ces variables peuvent être changé dans le fichier `variable.mf`.
 
+###Varier le type et la taille du tracé
+
+Toujours dans le fichier `variable.mf` on peut faire varier le type et la taille du tracé. 
+
+Grâce aux variables `strokeX` et `strokeY` on change la largeur, avec `strokeRotate` on change son inclinaison (en degré)
+
+La variable `penStyle` définit le style de forme du trait. La valeur `0` corespond à un trait forme carré(pensquare), la valeur `1` à celui en forme circulaire(pencircle).
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
