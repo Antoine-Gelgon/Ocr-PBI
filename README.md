@@ -22,21 +22,21 @@ Il exécuter la font il vous faut plusieurs programmes.
 
 Pour pouvoir exécuter cette fonte il faut la totalité des fichiers .mf de ce dossier à la même racine.
 
-**ocr-pbi-canonique.mf** // est le fichier réunissant l'entirèeté des fichiers sources. C'est le fichier à exécuter, pour générer la fonte. Il permet également de changer des paramètres globales de la fonte. (exemple mettre les glyphs sous fond noir)
+- **ocr-pbi-canonique.mf** // est le fichier réunissant l'entirèeté des fichiers sources. C'est le fichier à exécuter, pour générer la fonte. Il permet également de changer des paramètres globales de la fonte. (exemple mettre les glyphs sous fond noir)
 
-**ocr-pbi-canonique-set.mf** // l'ensemble des fonctions ce trouve dans ce fichiers.
+- **ocr-pbi-canonique-set.mf** // l'ensemble des fonctions ce trouve dans ce fichiers.
 
-**variable.mf** // sont les variables simple à modifier. Par exemple changer le type et la taille du trait, la largeur de la chasse et la hauteur des lettres.
+- **variable.mf** // sont les variables simple à modifier. Par exemple changer le type et la taille du trait, la largeur de la chasse et la hauteur des lettres.
 
-**Letters** // dans ce dossier on trouve les fichiers séparés des glyphs.
+- **Letters** // dans ce dossier on trouve les fichiers séparés des glyphs.
 
-**ocr-pbi-canonique-def.mf** // un fichier avec le reste des glyphs.
+- **ocr-pbi-canonique-def.mf** // un fichier avec le reste des glyphs.
 
-**exe.sh** // le script d'exécution.
+- **exe.sh** // le script d'exécution.
 
-**print.py** // petit script en python pour changer le fichier le .pfa en .ttf.
+- **print.py** // petit script en python pour changer le fichier le .pfa en .ttf.
 
-**speci.html** // permet de visualiser l'ensemble des lettres directement après l'exécution.
+- **speci.html** // permet de visualiser l'ensemble des lettres directement après l'exécution.
 
 ###Exécuter la fonte
 
