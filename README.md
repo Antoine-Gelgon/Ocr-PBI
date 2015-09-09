@@ -68,6 +68,8 @@ Les points d'encrages du tracé sont écrits `(x,y)`. Pour faire une courbe entr
 
 Le tracé peut-être orienté grâce à `{up}`, `{down}`, `{right}`, `{left}` ou bien par `{(x,y)}`.
 
+Pour fermer un tracé on utilise `cycle`.
+
 ###Injecter les variables x et y
 
 Pour permettre à la fonte de pouvoir changer de chasse ou de hauteur on peut injecter les variables `x` et `y` dans les glyphs.
@@ -90,9 +92,22 @@ La valeur de ces variables peuvent être changé dans le fichier `variable.mf`.
 ###Varier le type et la taille du tracé
 
 Toujours dans le fichier `variable.mf` on peut faire varier le type et la taille du tracé. 
-
+![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
 Grâce aux variables `strokeX` et `strokeY` on change la largeur, avec `strokeRotate` on change son inclinaison (en degré)
 
 La variable `penStyle` définit le style de forme du trait. La valeur `0` corespond à un trait de forme carré(pensquare), la valeur `1` à celui de forme circulaire(pencircle).
 
-![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
+![Specimen](square)
+```
+strokeX:=70;
+strokeY:=50;
+strokeRotate:=45;
+penStyle:=0;
+```
+![Specimen](circle)
+```
+strokeX:=70;
+strokeY:=50;
+strokeRotate:=0;
+penStyle:=1;
+```
