@@ -71,9 +71,7 @@ Le tracé peut-être orienté grâce à `{up}`, `{down}`, `{right}`, `{left}` ou
 ###Injecter les variables x et y
 
 Pour permettre à la fonte de pouvoir changer de chasse ou de hauteur on peut injecter les variables `x` et `y` dans les glyphs.
-
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/recadre/anime-ocr-pbi.gif)
-
 
 Pour ça il suffit d'écrire `*x` et `*y` dans les coordonnées des points(le `*` est le signe multiplié). La description du `a` deviendra donc:
 ```
@@ -95,6 +93,6 @@ Toujours dans le fichier `variable.mf` on peut faire varier le type et la taille
 
 Grâce aux variables `strokeX` et `strokeY` on change la largeur, avec `strokeRotate` on change son inclinaison (en degré)
 
-La variable `penStyle` définit le style de forme du trait. La valeur `0` corespond à un trait forme carré(pensquare), la valeur `1` à celui en forme circulaire(pencircle).
+La variable `penStyle` définit le style de forme du trait. La valeur `0` corespond à un trait de forme carré(pensquare), la valeur `1` à celui de forme circulaire(pencircle).
 
 ![Specimen](https://github.com/Antoine-Gelgon/Ocr-PBI/raw/master/screenshot/anime/2/recadre/anime-2.gif)
