@@ -115,7 +115,7 @@ penStyle:=1;
 
 Dans le fichier `variable.mf` il y a une variable `Version`. Cette variable permet d'activer des glyphs alternatifs dans la fonte. Exemple un autre dessin du `a`.
 
-'''
+```
 o.s[97][1]:= (3.5*x,8.5*y)--(3.5*x,0.65*y);
 o.s[97][2]:= (0*x,8.65*y){left}..(-2*x,8.05*y)..(-3*x,6.9*y)..(-3.5*x,4.6*y){down}..
                  (-3*x,2.35*y)..(-2*x,1.2*y)..(-1*x,0.73*y)..(0*x,0.6*y){right}..
@@ -138,11 +138,11 @@ if Version=3:
 o.s[97][2] := (0*x,5.5*y)..(-3.25*x,3*y){down}..(-3*x,2*y)..(0*x,0.6*y)..(2.85*x,3*y)..cycle;
 o.i[97]:=3  ;   o.m[26]  := 0.6;
 fi
-'''
-Ici pour créer une nouvelle version il faut faire une condition 'if'.
+```
+Ici pour créer une nouvelle version il faut faire une condition `if`.
 
-'''
+```
 if Version=2:
   % ici mettre le dessin du glyph
 fi
-'''
+```
