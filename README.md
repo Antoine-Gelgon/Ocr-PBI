@@ -115,6 +115,8 @@ penStyle:=1;
 
 Dans le fichier `variable.mf` il y a une variable `Version`. Cette variable permet d'activer des glyphs alternatifs dans la fonte. Exemple un autre dessin du `a`.
 
+![speci](https://github.com/Antoine-Gelgon/Ocr-PBI/blob/master/screenshot/mont.jpg?raw=true)
+
 ```
 o.s[97][1]:= (3.5*x,8.5*y)--(3.5*x,0.65*y);
 o.s[97][2]:= (0*x,8.65*y){left}..(-2*x,8.05*y)..(-3*x,6.9*y)..(-3.5*x,4.6*y){down}..
