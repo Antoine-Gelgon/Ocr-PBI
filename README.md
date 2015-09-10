@@ -16,7 +16,7 @@ Pour exécuter la fonte il vous faut plusieurs programmes.
 
 * **Texlive** -> [documentation](https://github.com/EtienneOz/MetaBlum)
 
-* [**Fontforge**](http://fontforge.github.io/en-US/).
+* [**Fontforge**](http://fontforge.github.io/en-US/)
 
 * [**Mftrace**](http://lilypond.org/mftrace/)
 
