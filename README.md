@@ -24,11 +24,11 @@ Pour exécuter la fonte il vous faut plusieurs programmes.
 
 Pour pouvoir exécuter cette fonte il faut la totalité des fichiers .mf de ce dossier à la même racine.
 
-- `ocr-pbi-canonique.mf` // est le fichier réunissant l'entirèeté des fichiers sources. C'est le fichier à exécuter, pour générer la fonte. Il permet également de changer des paramètres globales de la fonte. (exemple mettre les glyphs sous fond noir)
+- `ocr-pbi-canonique.mf` // est le fichier réunissant l'entièreté des fichiers sources. C'est le fichier à exécuter pour générer la fonte.
 
 - `ocr-pbi-canonique-set.mf` // l'ensemble des fonctions ce trouve dans ce fichiers.
 
-- `variable.mf` // sont les variables simple à modifier. Par exemple changer le type et la taille du trait, la largeur de la chasse et la hauteur des lettres.
+- `variable.mf` // sont les variables simples à modifier. Par exemple changer le type et la taille du trait, la largeur de la chasse et la hauteur des lettres.
 
 - `letters/` // dans ce dossier on trouve les fichiers séparés des glyphs.
 
@@ -87,7 +87,7 @@ o.s[97][2]:= (0*x,8.65*y){left}..(-2*x,8.05*y)..(-3*x,6.9*y)..(-3.5*x,4.6*y){dow
              
 o.i[97]:=2  ;   o.m[97]  := 0.65;
 ```
-La valeur de ces variables peut être changé dans le fichier `variable.mf`.
+La valeur de ces variables peut être changée dans le fichier `variable.mf`.
 
 ###Varier le type et la taille du tracé
 
